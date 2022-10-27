@@ -35,5 +35,35 @@ const quotes = [
         quote:"\"Obstacles are those frightful things you see when you take your eyes off your goal\"",
         author:"Henry Ford",
     },
+    {
+        quote:"\"Your time is limited, so don't waste it living someone else's life\"",
+        author:"Steve Jobs",
+    },
+    {
+        quote:"\"Life is too short to hang out with people who won't be resourceful\"",
+        author:"Jeff Bezos",
+    },
+    {
+        quote:"\"When something is important enough, you do it even if the odds are not in your favor\"",
+        author:"Elon Musk",
+    },
+    {
+        quote:"\"If you born poor, it's not your mistake. But if you die poor, it's your mistake.\"",
+        author:"Bill Gates",
+    },
+    {
+        quote:"\"Do not put off. Act now!\"",
+        author:"Bill Gates",
+    },
+    {
+        quote:"\"If you don't give up, you still have a chance. Giving up is the greatest failure.\"",
+        author:"Jack Ma",
+    },
 ]
 
+const quote = document.querySelector('#quote');
+const author = document.querySelector('#quote__author');
+
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
