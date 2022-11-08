@@ -1,38 +1,57 @@
-.hidden{
-    display: none;
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
 }
 
 body {
-    margin: 0px;
-    background-size: cover;
-    height: 100vh;
-    width: auto;
-    background-repeat: no-repeat;
-    font-family: 'Dosis', sans-serif;
-    background-attachment: fixed;
-    text-align: center;
+  margin: 0px;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Dosis", sans-serif;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
 }
 
-#clock{
-    font-size: 100px;
-    color: rgb(255, 255, 255);
+#clock {
+  font-size: 100px;
+  color: rgb(255, 255, 255);
 }
 
 /* login-form */
-#login-form{
-    margin: 10px;
+#login-form {
+  margin: 10px;
 }
-input{
-    font-size: 20px;
-}
-
-input::placeholder{
-    font-weight:600;
-    color: rgba(0, 0, 0, 0.658);
-    font-size: 16px;
+input {
+  font-size: 20px;
 }
 
+input::placeholder {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 16px;
+}
 
-#quotes{
-    margin: 10px;
+#quotes p {
+  position: relative;
+  margin: 10px;
+  display: block;
+  color: white;
+  bottom: -100px;
+}
+
+#weather {
+  margin: 10px;
+  position: absolute;
+  top: -60px;
+  right: 10px;
+  background-color: beige;
+  padding: 7px;
+  border-radius: 15px;
 }
