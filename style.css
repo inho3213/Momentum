@@ -46,6 +46,14 @@ input::placeholder {
   bottom: -100px;
 }
 
+#quote {
+  font-size: 18px;
+}
+
+#quote__author {
+  font-size: 20px;
+}
+
 #weather {
   margin: 10px;
   position: absolute;
